@@ -1,0 +1,356 @@
+
+@import "footer";
+@import "form";
+@import "table";
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    background-image: url("follaje background.jpg");
+    background-size: contain;
+    flex-direction:column;
+    height: auto;
+    width: auto;
+    padding: 1em;
+    header{
+        background-color: antiquewhite;
+        color: black;
+        text-decoration: none;
+        .cajaINFlex{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            .container{
+                display: flex;
+                width: auto;
+                height: auto;
+                list-style: none;
+                text-align: left;
+                
+                .logo{
+                    display: flex;
+                    flex-direction: initial;
+                    overflow: hidden;
+                    padding: 16px 30px 12px 30px;
+                    background: antiquewhite;
+                    color: black;
+                    color: #c7b5a1;
+                    text-decoration: none;
+                    background-size:cover;
+                    img{
+                        image-orientation: initial;
+                        padding: 0px;
+                        margin: 0px;
+                        max-height: 40px;
+                        text-decoration: none;
+                    }
+                    
+                    h1{
+                    height: 300px;
+                    width: 300px;
+                    background-color: beige;
+                    color: #dfb483;
+                    font-size: 26px;
+                    padding: 0;
+                    line-height: 1;
+                    font-weight: 700;
+                    font-family: 'Playfair Display', serif;
+                    text-decoration: none;
+                    text-align: center;
+                    }
+                }
+                .navbar{
+                    ul{
+                        display: flex;
+                        margin: auto;
+                        padding: auto;
+                        text-align: center;
+                        list-style: none;
+                        background-color: antiquewhite;
+                        text-decoration: none;
+                        li{
+                            display: flex;
+                            text-align: center;
+                            margin: 0 10px 0 0;
+                            text-decoration: none;
+                        a{
+                            padding: 2px 7px 2px 7px;
+                            color: black;
+                            background-color: antiquewhite;
+                            border: 1px solid black;
+                            text-decoration: none;
+                            :hover{
+                                background-color: burlywood;
+                                color: coral;
+                            }
+                        }                        }
+                    }
+                }
+            }
+            
+               
+   
+    }
+    
+        
+  
+    }
+    #hero{
+      height: 1000px;
+      width: 1000px;
+      background-image: url("../css/img/tazadete.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right center;
+        align-items: center;
+        h1{
+          opacity: (
+            property: opacity,
+            values: (
+              0: 0,
+              25: .25,
+              50: .5,
+              75: .75,
+              100: 1,
+            )
+          ),
+          
+        }
+        h2{
+          opacity: (
+            property: opacity,
+            values: (
+              0: 0,
+              25: .25,
+              50: .5,
+              75: .75,
+              100: 1,
+            )
+          ),
+          
+        }
+          }   
+  
+    @media (max-width: 5000px) {
+        #header {
+          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+          top: 0;
+          background: #dfb483;
+        }
+    
+main{
+    height: 3000px;
+    width: 3000px;
+    background-color: darkseagreen;
+    #secciones{
+        & article{
+            background-color: rgb(236, 230, 230);
+            & h3{
+                background-color: antiquewhite;
+                text-align: center;
+                font-size: initial;
+
+            }
+        }
+        .row{
+            display: flex;
+            height: 400px;
+            width: 300px;
+        }
+    }
+    p{
+        background-color: rgb(240, 250, 194);
+        text-size-adjust: 100px;
+
+    }
+
+    h4{
+      color: lightcoral;
+      text-shadow: lightgrey;
+      text-size-adjust: 200;
+      text-align: center;
+      font-family:'Bebas Neue', cursive;;     
+    }
+    
+    }
+    .carousel-item{
+      display: block ;
+      width: 100%;
+      height: 400px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  #cajaCuatro{
+      background-color: rgb(227, 241, 231);
+      height: 200px;
+      width: 100%;
+  }
+  #cajaCinco{
+      background-color: rgb(227, 241, 231);
+      height: 200px;
+      width: 100%;
+  }
+  #cajaImg{
+      height: 1000px;
+      background-color: rgb(206, 187, 170);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content:left;
+      align-items: stretch;
+  
+  }
+  #cajaImgUno{
+      height: 500px;
+      width: 50%;
+      order: 0;
+  }
+  #cajaImgDos{
+      height: 500px;
+      width: 20%;
+      order: 1;
+  }
+      
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+}
+.portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+}
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 16px 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #444444;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50px;
+  font-family: "Poppins", sans-serif;
+}
+.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+  color: #fff;
+  background: #009970;
+}
+.portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+.portfolio .portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: rgba(54, 52, 58, 0.6);
+}
+.portfolio .portfolio-wrap::before {
+  content: "";
+  background: rgba(54, 52, 58, 0.6);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+.portfolio .portfolio-wrap img {
+  transition: all ease-in-out 0.3s;
+}
+.portfolio .portfolio-wrap .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+}
+.portfolio .portfolio-wrap .portfolio-info h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+.portfolio .portfolio-wrap .portfolio-info p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+}
+
+.portfolio .portfolio-wrap:hover::before {
+  opacity: 1;
+}
+.portfolio .portfolio-wrap:hover img {
+  transform: scale(1.2);
+}
+.portfolio .portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
+}
+
+    }
+
+}
+#body{
+  background-color: rgb(226, 207, 207);
+}
+
+
+
+p{
+    font-family: 'Playfair Display', serif;
+    color: rgb(243, 239, 239);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+ol{
+    list-style: upper-alpha;
+    background-color: wheat;
+}
+
+
+
+
+.colordeParrafo{
+    color:rgb(47, 58, 58);
+}
+.colordeLista{
+    color: rgb(126, 126, 156);
+
+}
+
+
+
+@media screen and (max-widht:5000px){
+    #cajaINUno li a{
+        font-size: 16px;
+    }
+}
+
+    
